@@ -1,0 +1,134 @@
+extends base 
+block content 
+  nav.navbar.bg-body-tertiary.custom-nav-border
+    .container
+      a.h1 Chat App
+      button.btn.btn-outline-success.btn-custom-size(type="submit") Log out
+  .container-fluid 
+    .row.p-4.bg-light
+      .col-4.p-4.custom-border 
+        h3.font-weight-bold.mb-3.text-center.text-lg-start Member
+        form
+          .input-group.mb-3
+            input.form-control(type="search", placeholder="search here")
+            button.btn.btn-warning#button-addon2(type="button", style="padding-top: 0.55rem") Search
+
+        .row.overflow-y-scroll.height-custom-css.mx-1 
+          ul.list-unstyled.mb-0
+            li.p-2.border-bottom(style="background-color: #eee")
+              a.d-flex.justify-content-between(href="#!")
+                .d-flex.flex-row
+                  img.rounded-circle.d-flex.align-self-center.me-3.shadow-1-strong(src="./img/chatapp.jpg", alt="avatar", width="60")
+                  .pt-1
+                    p.fw-bold.mb-0 John Doe
+                    p.small.text-muted Hello, Are you there?
+                .pt-1
+                  p.small.text-muted.mb-1 Just now
+                  span.badge.bg-danger.float-end 1
+            li.p-2.border-bottom
+              a.d-flex.justify-content-between(href="#!")
+                .d-flex.flex-row
+                  img.rounded-circle.d-flex.align-self-center.me-3.shadow-1-strong(src="./img/chatapp.jpg", alt="avatar", width="60")
+                  .pt-1
+                    p.fw-bold.mb-0 Danny Smith
+                    p.small.text-muted Lorem ipsum dolor sit.
+                .pt-1
+                  p.small.text-muted.mb-1 5 mins ago
+            li.p-2.border-bottom
+              a.d-flex.justify-content-between(href="#!")
+                .d-flex.flex-row
+                  img.rounded-circle.d-flex.align-self-center.me-3.shadow-1-strong(src="./img/chatapp.jpg", alt="avatar", width="60")
+                  .pt-1
+                    p.fw-bold.mb-0 Danny Smith
+                    p.small.text-muted Lorem ipsum dolor sit.
+                .pt-1
+                  p.small.text-muted.mb-1 5 mins ago
+            li.p-2.border-bottom
+              a.d-flex.justify-content-between(href="#!")
+                .d-flex.flex-row
+                  img.rounded-circle.d-flex.align-self-center.me-3.shadow-1-strong(src="./img/chatapp.jpg", alt="avatar", width="60")
+                  .pt-1
+                    p.fw-bold.mb-0 Danny Smith
+                    p.small.text-muted Lorem ipsum dolor sit.
+                .pt-1
+                  p.small.text-muted.mb-1 5 mins ago
+            li.p-2.border-bottom
+              a.d-flex.justify-content-between(href="#!")
+                .d-flex.flex-row
+                  img.rounded-circle.d-flex.align-self-center.me-3.shadow-1-strong(src="./img/chatapp.jpg", alt="avatar", width="60")
+                  .pt-1
+                    p.fw-bold.mb-0 Danny Smith
+                    p.small.text-muted Lorem ipsum dolor sit.
+                .pt-1
+                  p.small.text-muted.mb-1 5 mins ago                  
+      .col.p-4 
+        .d-flex.flex-row.bg-custom.align-items-center.mb-3
+          img.rounded-circle.d-flex.align-self-center.me-3.shadow-1-strong.mr-3(src="./img/chatapp.jpg", alt="avatar", width="70" height="70")
+          .d-flex.flex-column  
+            h4.mt-2  user full name  
+            small online 
+                        
+
+        .row.bg-light.mx-1.overflow-y-scroll.height-custom-css
+          .d-flex.flex-row.justify-content-start
+            img(src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp", alt="avatar 1", style="width: 45px; height: 45px; border-radius:50%")
+            div
+              p.small.p-2.ms-3.mb-1.rounded-3(style="background-color: #e1e7ed") Hi
+
+              p.small.p-2.ms-3.mb-1.rounded-3(style="background-color: #e1e7ed") How are you ...??? lorem9
+
+              p.small.ms-3.mb-3.rounded-3.text-muted 23:58
+
+
+          .divider.d-flex.align-items-center.mb-4
+            p.text-center.mx-3.mb-0(style="color: #a2aab7") Today
+
+
+          .d-flex.flex-row.justify-content-end.mb-4.pt-1
+            div
+              p.small.p-2.me-3.mb-1.text-white.rounded-3.bg-info.
+
+                Hiii, I'm good.
+
+              p.small.p-2.me-3.mb-1.text-white.rounded-3.bg-info.
+
+                How are you doing?
+
+              p.small.me-3.mb-3.rounded-3.text-muted.d-flex.justify-content-end.
+
+                00:06
+
+            img(src="/img/chatapp.jpg", alt="avatar 1", style="width: 45px; height: 45px")
+          .d-flex.flex-row.justify-content-start
+            img(src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp", alt="avatar 1", style="width: 45px; height: 45px; border-radius:50%")
+            div
+              p.small.p-2.ms-3.mb-1.rounded-3(style="background-color: #e1e7ed") Hi
+
+              p.small.p-2.ms-3.mb-1.rounded-3(style="background-color: #e1e7ed") How are you ...??? lorem9
+
+              p.small.ms-3.mb-3.rounded-3.text-muted 23:58
+
+          .d-flex.flex-row.justify-content-end.mb-4.pt-1
+            div
+              p.sender-text.small.p-2.me-3.mb-1.text-white.rounded-3.bg-info.
+
+                Hiii, I'm good.
+
+              p.small.p-2.me-3.mb-1.text-white.rounded-3.bg-info.
+
+                How are you doing?
+
+              p.small.me-3.mb-3.rounded-3.text-muted.d-flex.justify-content-end.
+
+                00:06
+
+            img(src="/img/chatapp.jpg", alt="avatar 1", style="width: 45px; height: 45px")
+
+        form
+          .input-group.mb-0
+            input.input.form-control(type="text", placeholder="Type message", aria-label="Recipient\'s username", aria-describedby="button-addon2")
+            button.send-message.btn.btn-warning#button-addon2(type="button", style="padding-top: 0.55rem") send              
+  footer 
+    p Lorem ipsum dolor sit amet. @Copy Shariful islam 
+    
+      

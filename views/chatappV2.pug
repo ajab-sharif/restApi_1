@@ -1,0 +1,43 @@
+extends base 
+block content 
+  nav.navbar.bg-body-tertiary.custom-nav-border
+    .container
+      a.h1 Chat App
+      button.btn.btn-outline-success.btn-custom-size(type="submit") Log out
+  .container 
+    .row.p-4
+      .col-4.bg-light.p-4
+        ul.user.overflow-y-scroll.height-custom-css-2.p-0
+          li.user-list.d-flex.flex-column.p-1
+            .user-box.d-flex.align-items-center 
+              img(src="img/chatapp.jpg", alt="photo")
+              h5.user-name User Name
+
+
+
+      .col-8.bg-info.p-4
+        .demy-text 
+          h3 click user to start  chats....
+        .user-message.hide
+          .user-info.align-items-center.d-flex
+            .user-photo 
+              img(src="img/chatapp.jpg", alt="photo" )
+            .user-status
+              h5.user-name.m-0 User Name 
+              small.user-active online 
+
+          .chat.overflow-y-scroll.height-custom-css
+            ul.chat-message
+              li.chat-sender hi 
+              li.chat-sender i'm reviver 
+              li.chat-sender every thing is good ? 
+              // user last message 
+              li.divider.d-flex.align-items-center.mb-4
+                p.text-center.mx-3.mb-0(style="color: #fff") Today
+              li.chat-reciver hi 
+              li.chat-reciver im sender 
+              li.chat-reciver how are you? ...
+          form
+            .input-group.mb-0
+              input.input.form-control(type="text", placeholder="Type message", aria-label="Recipient\'s username", aria-describedby="button-addon2")
+              button.send-message.btn.btn-warning#button-addon2(type="button", style="padding-top: 0.55rem") send

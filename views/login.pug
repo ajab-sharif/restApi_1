@@ -1,0 +1,17 @@
+extends base 
+block content 
+  .container.app__container
+    .mb-3.bg-primary 
+      h3.p-2 Log in
+    .mb-3 
+      img(src="chatapp.jpg", alt="app-icon")
+    form
+      .mb-3
+        label.form-label(for="formGroupExampleInput") Your Email
+        input.form-control#formGroupExampleInput(type="text", placeholder="Your Email")
+      .mb-3
+        label.form-label(for="formGroupExampleInput2") Your Password
+        input.form-control#formGroupExampleInput2(type="password", placeholder="********")  
+      .d-grid.gap-2.mx-auto
+        button.btn.btn-primary(type="button") Log in
+

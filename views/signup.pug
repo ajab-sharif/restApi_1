@@ -1,0 +1,30 @@
+extends base 
+block content 
+  .container.app__container
+    .mb-3.bg-primary 
+      h3.p-2 Sign Up
+    .mb-3 
+      img(src="chatapp.jpg", alt="app-icon")
+    form.form-signup
+      .row.g-4
+        .col-md-6
+          label.form-label(for="formGroupExampleInput")  First Name
+          input.form-control#formGroupExampleInput(type="text", placeholder=" First Name"  required)
+        .col-md-6
+          label.form-label(for="formGroupExampleInput")  Last Name
+          input.form-control#formGroupExampleInput(type="text", placeholder=" Last Name" required)
+        .col-md-6
+          label.form-label(for="formGroupExampleInput")  Email
+          input.form-control#formGroupExampleInput(type="text", placeholder=" Email" required)
+        .col-md-6
+          label.form-label(for="formGroupExampleInput2")  Password
+          input.form-control#formGroupExampleInput2(type="password", placeholder="********" required)
+        .col-md-6
+          label.form-label(for="formGroupExampleInput2") Confirm  Password
+          input.form-control#formGroupExampleInput2(type="password", placeholder="********" required)
+        .col-md-6
+          label.form-label(for="formFile") File
+          input.form-control#formFile(type="file")   
+        .d-grid.gap-2.mx-auto
+          button.btn-signup.btn.btn-primary(type="submit") Sing Up
+
